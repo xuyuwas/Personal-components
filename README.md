@@ -1,11 +1,8 @@
-##这是README.md
-、、、
+## 这是README.md
+```
 test
-、、、
-##这个是说明
-## 安装 & 使用
-
-```shell
-npm install guido -g
-guido
+```
+## 这个是说明
+```
+对的
 ```
