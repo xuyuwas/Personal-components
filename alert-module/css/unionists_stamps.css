@@ -1,0 +1,81 @@
+.bt{
+	width: 90%;
+	display: block;
+	border: none;
+	border-radius: 5px;
+	font-size: .24rem;
+	color: #fff;
+	background: #f41660;
+	padding: .1rem;
+	margin:.1rem auto;
+}
+
+.section-box-mask{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.section-box-mask .content-box{
+	position: absolute;
+	transform: translate3d(-50%,-50%,0);
+	left: 50%;
+	top: 50%;
+	z-index:100;
+	background-color: #fff;
+	border-radius: 5px;
+	font-size: .18rem;
+	text-align: center;
+	padding:.25rem;
+}
+.section-box-mask .content-box .mask-header.waiting{
+	width: .5rem;
+	height: .42rem;
+	margin: 0 auto;
+	background: url(../../img/loading-50.gif)no-repeat center center;
+	background-size: 100%;
+}
+.section-box-mask .content-box .mask-header.right{
+	width: .84rem;
+	height: .84rem;
+	margin: 0 auto;
+	background: url(../../img/success.png)no-repeat center center;
+	background-size: 100%;
+}
+.section-box-mask .content-box .mask-header.wrong{
+	width: .84rem;
+	height: .84rem;
+	margin: 0 auto;
+	background: url(../../img/nosuccess.png)no-repeat center center;
+	background-size: 100%;
+}
+.section-box-mask .content-box .mask-content{
+	margin: .1rem auto;
+}
+.section-box-mask .content-box .mask-footer button{
+	background: #ccc;
+	border: none;
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 .1rem;
+}
+.section-box-mask .content-box .mask-footer .green{
+	background:green;
+}
+.section-box-mask .content-box .mask-footer .red{
+	background:red;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+	<meta name="viewport" media="(device-height: 568px)" content="initial-scale=1.0,user-scalable=no,maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<title>title</title>
+	<link href="../css/activity_globals.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/unionists_stamps.css">
+	<script type="text/javascript" src="../js/rem.js"></script>
+	<script type="text/javascript" src="../zepto-all.min.js"></script>
+	<script type="text/javascript" src="../js/fastclick.script.js"></script>
+</head>
+<body>
+	<button class="bt bt1">只有loading的图标</button>
+	<script type="text/javascript" src="js/alert.js?01"></script>
+	<script type="text/javascript">
+	$(document).on('click','.bt1',function(){
+		var d = new Dialog({
+      		//定义对话框的宽和高
+                   width:100,
+                  //对话框的提示信息
+                   message:"你好吗你好吗你好吗你好吗你好吗？",
+                  //对话框的类型
+                  type:"waiting",
+                  //按钮配置
+                   button:[
+                   	{
+                   		type:"red",
+                   		text:"错的",
+                   		callback:function(){
+                   			alert(100);
+                   			return false;
+                   		}
+
+                   	},
+                   	{
+                   		type:"green",
+                   		text:"对的",
+                   		callback:function(){
+                   			alert("你将关闭弹窗");
+                   			d.close();
+                   			// return false;
+                   		}
+
+                   	}
+                   ],
+                  //弹出框延迟多久关闭
+                  delay:null,
+                  //对话框遮罩透明度
+                  maskOpacity:0.3
+		});
+	})
+	</script>
+</body>
+</html>
